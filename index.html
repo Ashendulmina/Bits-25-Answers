@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bits 25 Task Answers</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            margin-bottom: 30px;
+            color: #BB86FC;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+        }
+        .task-box {
+            background-color: #1E1E1E;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .task-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .task-number {
+            font-size: 28px;
+            font-weight: bold;
+            color: #BB86FC;
+        }
+        .task-name {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        footer {
+            background-color: #1E1E1E;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            color: #BB86FC;
+            font-size: 14px;
+            position: absolute;
+            bottom: 0;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bits 25 Task Answers</h1>
+    <div class="container">
+        <div class="task-box" onclick="location.href='./coding/C01/index.html'">
+            <div class="task-number">C01</div>
+            <div class="task-name">Task Name 1</div>
+        </div>
+
+        <div class="task-box" onclick="location.href='./coding/C02/main.py'">
+            <div class="task-number">C02</div>
+            <div class="task-name">Task Name 2</div>
+        </div>
+
+        <div class="task-box" onclick="location.href='./coding/C03/'">
+            <div class="task-number">C03</div>
+            <div class="task-name">Task Name 1</div>
+        </div>
+
+        <div class="task-box" onclick="location.href='./coding/C04/main.py'">
+            <div class="task-number">C04</div>
+            <div class="task-name">Task Name 2</div>
+        </div>
+
+        <div class="task-box" onclick="location.href='./coding/C05/index.html'">
+            <div class="task-number">C05</div>
+            <div class="task-name">Task Name 2</div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Ashen Dulmina. All rights reserved.
+    </footer>
+</body>
+</html>
