@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'digital';
+    src: url('./digital-dismay.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #282c34; /* #1a1a1a */ 
+    color: white;
+    transition: background-color 1s ease, color 1s ease;
+}
+.container {
+    text-align: center;
+    animation: fadeIn 0.5s;
+}
+.clock {
+    font-size: 60px;
+    margin: 10px 0;
+    position: relative;
+}
+.clock::before {
+    font-family: digital;
+    content: "00:00:00";
+    position: absolute;
+    top: 0;
+    left: 7px;
+    font-size: 90px;
+    color: rgba(255, 255, 255, 0.096);
+    z-index: 0; 
+    white-space: nowrap;
+}
+.current-time {
+    font-size: 90px;
+    font-family: digital;
+    position: relative;
+    z-index: 1;
+    white-space: nowrap;
+}
+.date {
+    font-family: "Orbitron";
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #61dafb;
+    color: black;
+    transition: background-color 0.3s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.dark-theme button {
+    background-color: #61dafb;
+    color: black;
+}
+.dark-theme button:hover {
+    background-color: #1a91db;
+}
+.light-theme button {
+    background-color: #ff6f61;
+    color: white; /* komada button ekk obl puka sudu krnna pluwnnam */
+}
+.light-theme button:hover {
+    background-color: #ff4432;
+}
+.dark-theme {
+    background-color: #282c34;
+    color: white;
+}
+.light-theme {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: black;
+}
